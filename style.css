@@ -1,0 +1,172 @@
+.container {
+  width: 500px;
+}
+.example-parent {
+  display: flex;
+  border: 1px solid black;
+  width: 100%;
+}
+.example-origin {
+  display: flex;
+  flex-basis: 100%;
+  flex-grow: 1;
+  padding: 20px 5px;
+  justify-content: space-evenly;
+}
+.example-draggable {
+  box-sizing: border-box;
+  /* background-color: rgb(255, 235, 205); */
+  background-color: rgb(255, 244, 228);
+  display: flex;
+  padding: 5px;
+  margin: 10px 1px;
+  width: 50px;
+  height: 50px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+
+.frivolous {
+  width: 100%;
+  height: 400px;
+  box-sizing: border-box;
+  display: grid;
+  grid-template-rows: repeat(7, auto);
+  background-color: rgb(255, 244, 228);
+  border: 1px solid black;
+  margin: 20px 0px;
+}
+
+.drag-absolutely {
+  position: absolute;
+  top: 120px;
+  left: 550px;
+  box-sizing: border-box;
+  background-color: blanchedalmond;
+  display: flex;
+  padding: 5px;
+  margin: 10px 0px;
+  width: 50px;
+  height: 50px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+
+.buttons {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.btn {
+  margin: 1rem 1rem 1rem;
+  padding: 0.3rem;
+  border: none;
+  width: 150px;
+  height: 50px;
+  color: white;
+  font-weight: bold;
+  font-size: medium;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.btn-save {
+  background-color: rgb(126, 168, 252);
+}
+.btn-save:hover {
+  background-color: rgb(98, 130, 196);
+}
+.btn-save:active {
+  background-color: rgb(22, 52, 112);
+  color: rgb(219, 231, 255);
+}
+.btn-load {
+  background-color: #f58b34;
+}
+.btn-load:hover {
+  background-color: #c26c26;
+}
+.btn-load:active {
+  background-color: #96521b;
+  color: #f7e6d7;
+}
+.btn-reset {
+  background-color: #838f88;
+}
+.btn-reset:hover {
+  background-color: #59615c;
+}
+.btn-reset:active {
+  background-color: black;
+  color: rgb(231, 231, 233);
+}
+.btn-delete {
+  background-color: #ee1111;
+}
+.btn-delete:hover {
+  background-color: #ac1414;
+}
+.btn-delete:active {
+  background-color: #771111;
+  color: #f5dbdb;
+}
+
+.img {
+  background-size: 80%;
+  background-repeat: no-repeat;
+  background-position: center, center;
+}
+.column-vert {
+  background-image: url("./svg/pillar_vert.svg");
+}
+.column-horz {
+  background-image: url("./svg/pillar_horz.svg");
+  transform: rotate(90deg);
+}
+.bed {
+  background-image: url("./svg/bed.svg");
+}
+.table {
+  background-image: url("./svg/table.svg");
+}
+.carpet {
+  background-image: url("./svg/carpet.svg");
+}
+.poole-table {
+  background-image: url("./svg/pool_table.svg");
+}
+.furniture {
+  background-image: url("./svg/furniture.svg");
+}
+.decorative-table {
+  background-image: url("./svg/decorative_table.svg");
+}
+
+.mosquito {
+  background-image: url("./svg/mosquito.svg");
+}
+
+.trashcontainer {
+  display: flex;
+  justify-content: end;
+  margin-bottom: 20px;
+}
+.trashbin {
+  border: 1px solid none;
+  border-radius: 50%;
+  width: 75px;
+  height: 75px;
+  background-image: url("./svg/trashbin.svg");
+  background-size: 80%;
+  background-repeat: no-repeat;
+  background-position: center, center;
+  /* background-size: contain; */
+  /* background-repeat: no-repeat, no-repeat; */
+}

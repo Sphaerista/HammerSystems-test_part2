@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>2d planner</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="example-parent">
+        <div
+          class="example-origin"
+          ondragover="onDragOver(event)"
+          ondrop="onDrop(event)"
+        >
+          <div
+            class="example-draggable img column-vert"
+            id="graggable-1"
+            draggable="true"
+            ondragstart="onDragStart(event)"
+            ondragend="onDropStop(event)"
+          ></div>
+          <div
+            class="example-draggable img column-horz"
+            id="graggable-2"
+            draggable="true"
+            ondragstart="onDragStart(event)"
+            ondragend="onDropStop(event)"
+          ></div>
+          <div
+            class="example-draggable img bed"
+            id="graggable-3"
+            draggable="true"
+            ondragstart="onDragStart(event)"
+            ondragend="onDropStop(event)"
+          ></div>
+          <div
+            class="example-draggable img table"
+            id="graggable-4"
+            draggable="true"
+            ondragstart="onDragStart(event)"
+            ondragend="onDropStop(event)"
+          ></div>
+          <div
+            class="example-draggable img carpet"
+            id="graggable-5"
+            draggable="true"
+            ondragstart="onDragStart(event)"
+            ondragend="onDropStop(event)"
+          ></div>
+          <div
+            class="example-draggable img poole-table"
+            id="graggable-6"
+            draggable="true"
+            ondragstart="onDragStart(event)"
+            ondragend="onDropStop(event)"
+          ></div>
+          <div
+            class="example-draggable img furniture"
+            id="graggable-7"
+            draggable="true"
+            ondragstart="onDragStart(event)"
+            ondragend="onDropStop(event)"
+          ></div>
+          <div
+            class="example-draggable img decorative-table"
+            id="graggable-8"
+            draggable="true"
+            ondragstart="onDragStart(event)"
+            ondragend="onDropStop(event)"
+          ></div>
+          <div
+            class="example-draggable img mosquito"
+            id="graggable-9"
+            draggable="true"
+            ondragstart="onDragStart(event)"
+            ondragend="onDropStop(event)"
+          ></div>
+        </div>
+      </div>
+      <div class="twosides">
+        <div class="buttons">
+          <button class="btn btn-save" onclick="onSave2D()">Save</button>
+          <button class="btn btn-load" onclick="onLoad2D()">Load</button>
+          <button class="btn btn-reset" onclick="onReset2D()">Reset</button>
+          <button class="btn btn-delete" onclick="onClearFiles()">
+            Delete all saved
+          </button>
+        </div>
+        <div
+          class="frivolous"
+          ondragover="onDragOver(event)"
+          ondrop="dropToConvert(event)"
+        ></div>
+        <div class="trashcontainer">
+          <div class="trashbin"></div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
